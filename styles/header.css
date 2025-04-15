@@ -3,8 +3,7 @@
   height: 23.04px;
   flex-shrink: 0;
 }
-.header {
-}
+
 .header-wrapper {
   height: 85px;
   width: 100%;
@@ -12,8 +11,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.header-nav {
-}
+
 .nav-list {
   display: flex;
   justify-content: center;
