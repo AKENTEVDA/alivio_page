@@ -1,0 +1,62 @@
+.hero {
+  background: url("../assets/webp/background_fs.webp") center/cover no-repeat;
+  width: 100%;
+  height: 890px;
+}
+
+.hero-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  max-width: 420px;
+  padding: 175px 0 0;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 65px;
+  color: var(--c-green);
+}
+
+.hero-desc {
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--c-black);
+  margin: 22px 0 44px;
+}
+
+.hero-block .btn {
+  width: 227px;
+  height: 65px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 700px;
+  }
+  .hero-block {
+    padding: 80px 0 0;
+  }
+  .hero-block .btn {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    background: linear-gradient(
+        180deg,
+        rgba(245, 246, 252, 0.52),
+        rgba(255, 176, 139, 0.28)
+      ),
+      url("../assets/webp/background_fs.webp") 60% 50% / cover no-repeat;
+  }
+  .hero-block {
+    max-width: 300px;
+  }
+  .hero-block .btn {
+    margin: 0 auto;
+    font-size: 20px;
+  }
+}
