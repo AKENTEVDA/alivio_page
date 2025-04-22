@@ -1,0 +1,83 @@
+.about {
+  padding: 169px 25px 56px;
+}
+
+.text-top {
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--c-black);
+}
+.about_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  color: var(--c-black);
+}
+
+.main-title {
+  position: relative;
+  font-weight: 700;
+  font-size: 50px;
+  color: var(--c-green);
+  max-width: 504px;
+}
+.main-title::before {
+  position: absolute;
+  content: "How it works";
+  top: -30px;
+  left: 0;
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--c-black);
+}
+.description-main {
+  font-weight: 500;
+  font-size: 20px;
+  max-width: 621px;
+}
+.cards-container {
+  margin: 70px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.cards-container .figure-card:nth-child(2) {
+  margin: 230px;
+}
+@media (max-width: 1440px) {
+  .cards-container {
+    padding: 0 15px;
+  }
+}
+@media (max-width: 1230px) {
+  .about_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+  }
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+  .cards-container .figure-card:nth-child(2) {
+    margin: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .about_title {
+    padding: 0 15px;
+  }
+  .main-title {
+    font-size: 35px;
+  }
+  .description-main {
+    font-size: 16px;
+  }
+}
