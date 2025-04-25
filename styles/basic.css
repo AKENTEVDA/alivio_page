@@ -55,3 +55,9 @@ a {
   background-color: transparent;
   color: var(--c-black);
 }
+
+.logo-icon {
+  width: 81px;
+  height: 24px;
+  flex-shrink: 0;
+}
