@@ -23,13 +23,13 @@
           <nav class="header-nav" aria-label="navigation">
             <ul class="nav-list" aria-label="navigation-list">
               <li class="list-element">
-                <a href="#" class="link__element-list">Why Alivio</a>
+                <a href="#whyAlivio-id" class="link__element-list">Why Alivio</a>
               </li>
               <li class="list-element">
-                <a href="#" class="link__element-list">Solutions</a>
+                <a href="#solutions-id" class="link__element-list">Solutions</a>
               </li>
               <li class="list-element">
-                <a href="#" class="link__element-list">Community</a>
+                <a href="#community-id" class="link__element-list">Community</a>
               </li>
               <li class="list-element">
                 <a href="#" class="link__element-list">Pricing</a>
@@ -43,6 +43,35 @@
         </div>
       </div>
     </header>
+    <div class="mobile-menu">
+      <label for="menu-toggler-id">
+        <svg class="open-menu-icon">
+          <use  href="/assets/sprites.svg#burger-icon"></use>
+        </svg>
+      </label>
+      <input type="checkbox" name="toggler" id="menu-toggler-id"  class="mobile-navigation__toggler" aria-label="toggle for open-close menu" />
+      <nav class="mobile-menu-nav" aria-label="mobile-menu navigation">
+        <ul class="mobile-menu-nav__list" aria-label="mobile-menu list">
+          <li class="mobile-menu-nav__element">
+            <a href="#whyAlivio-id" class="mobile-menu-nav__link">Why Alivio</a>
+          </li>
+          <li class="mobile-menu-nav__element">
+            <a href="#solutions-id" class="mobile-menu-nav__link">Solutions</a>
+          </li>
+          <li class="mobile-menu-nav__element">
+            <a href="#community-id" class="mobile-menu-nav__link">Community</a>
+          </li>
+          <li class="mobile-menu-nav__element">
+            <a href="#" class="mobile-menu-nav__link">Pricing</a>
+          </li>
+        </ul>
+        <label for="menu-toggler-id" class="mobile-menu__close">
+          <svg class="close-menu-icon">
+          <use href="assets/sprites.svg#cross-icon"></use>
+          </svg>
+        </label>
+      </nav>
+    </div>
     <main>
       <section class="hero" aria-label="hero-section">
           <div class="container">
@@ -58,7 +87,7 @@
           </div>
         </div>
       </section>
-      <section class="about" aria-label="about_section">
+      <section class="about" aria-label="about_section" id="whyAlivio-id">
         <div class="container">
           <!-- <h3 class="text-top">How it works</h3> -->
           <div class="about_title">
@@ -85,7 +114,7 @@
           </div>
         </div>
       </section>
-      <section class="success" aria-label="success-section">
+      <section class="success" aria-label="success-section" id="community-id">
         <div class="container">
           <div class="container-success" aria-label="success wrapper">
             <div class="content-success" aria-label="success-content block">
@@ -103,7 +132,7 @@
           </div>
         </div>
       </section>
-      <section class="product" aria-label="product-section">
+      <section class="product" aria-label="product-section" id="solutions-id">
         <div class="container">
           <div class="product__wrapper">
             <div class="preview__product" aria-label="preview photo">
@@ -133,6 +162,28 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="pricing" id="pricing-id">
+      <div class="container">
+        <div class="pricing__content">
+          <h2 class="pricing__title">Alivio</h2>
+          <nav class="pricing-nav" aria-label="navigation">
+            <ul class="pricing__nav-list" aria-label="navigation-list">
+              <li class="pricing__nav-element">
+                <a href="#whyAlivio-id" class="pricing__nav-link">Why Alivio</a>
+              </li>
+              <li class="pricing__list-element">
+                <a href="#solutions-id" class="pricing__nav-link">Solutions</a>
+              </li>
+              <li class="pricing__list-element">
+                <a href="#community-id" class="pricing__nav-link">Community</a>
+              </li>
+              <li class="pricing__list-element">
+                <a href="#" class="pricing__nav-link">Pricing</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

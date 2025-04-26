@@ -49,4 +49,7 @@
   .nav-list {
     display: none;
   }
+  .header-wrapper {
+    padding: 0 0 0 45px;
+  }
 }
